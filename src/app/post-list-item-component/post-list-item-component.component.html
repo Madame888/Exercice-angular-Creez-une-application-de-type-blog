@@ -1,0 +1,9 @@
+<div [ngStyle]="{backgroundColor: getColor()}">
+  <h3>{{title}}</h3>
+    <p>Date de création: {{createdAt| date: 'dd/MM/yyyy' | lowercase}}</p>
+    <p>{{content}}</p>
+
+    <button type="button" [ngStyle]="{backgroundColor:'green'}" (click)="like()"> Like it!</button>
+    <button type="button" [ngStyle]="{backgroundColor:'red'}" (click)="dislike()"> Don't like it!</button>
+    <p> Nombre de 'love its': {{loveIts}}</p>
+</div>
